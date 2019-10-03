@@ -1,0 +1,25 @@
+<div id="login_bg" [ngStyle]="style"></div>
+<div id="login" class="mx-auto">
+    <form autocomplete="off" #formulario="ngForm" (ngSubmit)="ingresar(formulario)">
+        <a [href]="link" class="link-garantia">
+            <span><img [src]="logo" alt="Página oficial Garantia" class="btn-block"></span>
+        </a>
+        <div class="form-group">
+            <input type="email" autocomplete="off" class=" form-control" name="correo" (focus)="limpiarErrores()"
+                placeholder="Correo Electrónico" required [(ngModel)]="correo">
+            <input type="password" autocomplete="off" class=" form-control" name="contrasenia" (focus)="limpiarErrores()"
+                placeholder="Contraseña" required [(ngModel)]="contrasenia">
+            <div class="alert alert-danger" role="alert" *ngIf="!usuario_valido">
+                Tus datos no son correctos
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-block" >
+                Ingresar
+            </button>
+            <button type="button" class="btn btn-success btn-block">
+                Solicita tu crédito
+            </button>
+        </div>
+    </form>
+</div>

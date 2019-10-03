@@ -1,0 +1,18 @@
+<div class="row" *ngIf="session.session_sigin">
+    <div class="div-menu">
+      <app-menu></app-menu>
+    </div>
+    <div id="header">
+        <app-header></app-header>
+        <div id="contenido">
+            <router-outlet></router-outlet>
+        </div>
+        <app-footer></app-footer>
+    </div>
+</div>
+
+<div *ngIf="!session.session_sigin">
+    <app-login></app-login>
+</div>
+<app-mensajes></app-mensajes>
+<app-loader></app-loader>

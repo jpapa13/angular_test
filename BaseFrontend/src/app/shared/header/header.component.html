@@ -1,0 +1,36 @@
+<nav class="navbar navbar-white bg-white">
+    <form class="container col-md-12">
+        <div class="col-xs-6">
+            <div class="input-group mb-3 input-group-search">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="button-search">
+                    <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Buscar..." aria-label="Example text with button addon" aria-describedby="button-search">
+                <div class="input-group-append">
+                    <button class="btn btn-info" type="button" id="button-search">Buscar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 config">
+            <div class="input-group mb-3 input-group-config">
+                <div class="dropdown">
+                    <button class="btn btn-default border dropdown-toggle" type="button" id="config_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img [src]="foto" class="foto border rounded-circle" alt="foto" title="foto">
+                        <span class="correo">{{session.correo}}</span><br>
+                        <span class="perfil">{{session.perfil_nombre}}</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="config_menu">
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user-circle"></i> Mi cuenta
+                        </a>
+                        <a class="dropdown-item" href="#" (click)="salir()">
+                            <i class="fas fa-sign-out-alt"></i> Salir
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</nav>

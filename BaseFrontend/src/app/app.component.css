@@ -1,0 +1,39 @@
+.row .col-xs-3.col-lg-3,
+.row .col-xs-9.col-lg-9{
+    padding-right: 0px;
+}
+.div-menu{
+    width: 290px;
+}
+#header{
+    padding-left: 0px;
+    width: calc(100% - 290px);
+}
+#contenido{
+    overflow: auto;
+}
+#contenido::-webkit-scrollbar {
+    width: 8px;
+}
+#contenido::-webkit-scrollbar-track {
+    background: #dddddd; 
+}
+#contenido::-webkit-scrollbar-thumb {
+    background: #aaaaaa; 
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+#contenido::-webkit-scrollbar-thumb:hover {
+    background: #666666; 
+}
+@media(max-width:1000px){
+    .div-menu{
+        height: 80px;
+        position: absolute;
+        z-index: 1;
+        width: auto;
+    }
+    #header{
+        width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+<nav id="menu" class="navbar bg-white">
+    <div class="input-group">
+        <button class="btn btn-lg btn-white" (click)="mostrarMenu()" type="button">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+<nav id="menu2" class="navbar header-menu">
+    <div class="header-menu text-center img">
+        <img [src]="logo" alt="" height="16">
+    </div>
+    <ul class="list-group btn-block">
+        <li class="list-group-item header-menu"><strong>COMPONENTES</strong></li>
+        <li class="list-group-item header-menu">
+            <ul class="list-group btn-block">
+                <li class="list-group-item header-menu link">
+                    <a class="btn-block" [routerLink]="[ '/componentes/dashboard' ]">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
+                </li>
+                <li class="list-group-item header-menu link">
+                    <i class="fas fa-chart-pie"></i> CRM <i class="menu-item-right fas fa-angle-right"></i><i class="menu-item-right fas fa-angle-down d-none"></i>
+                    <ul class="list-group btn-block">
+                        <li class="list-group-item header-menu link">Prueba</li>
+                        <li class="list-group-item header-menu link">Prueba 2</li>
+                    </ul>
+                </li>
+                <li class="list-group-item header-menu link"><i class="fas fa-file-invoice"></i> Solicitudes</li>
+                <li class="list-group-item header-menu link"><i class="fas fa-archive"></i> Archivo</li>
+                <li class="list-group-item header-menu link"><i class="fas fa-headset"></i> Soporte</li>
+            </ul>
+        </li>
+        <li class="list-group-item header-menu"><strong>CONFIGURACIONES</strong></li>
+        <li class="list-group-item header-menu">
+            <ul class="list-group btn-block">
+                <li class="list-group-item header-menu link">
+                    <a class="btn-block" [routerLink]="[ '/configuraciones/usuarios' ]">
+                        <i class="fas fa-users"></i> Usuarios
+                    </a>
+                </li>
+                <li class="list-group-item header-menu link">
+                    <a class="btn-block" [routerLink]="[ '/configuraciones/perfiles' ]">
+                        <i class="far fa-id-card"></i> Perfiles
+                    </a>
+                </li>
+                <li class="list-group-item header-menu link">
+                    <a class="btn-block" [routerLink]="[ '/configuraciones/permisos' ]">
+                        <i class="fas fa-key"></i> Permisos
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="btn-block header-menu text-right pr-3" (click)="ocultarMenu()">
+        <i class="fas fa-arrow-circle-left"></i>
+    </div>
+</nav>

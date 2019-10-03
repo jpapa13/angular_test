@@ -1,0 +1,74 @@
+body{
+    background-color: #f1f3fa;
+    font-family: Nunito,sans-serif;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #164f94;
+    border-color: #4250f2;
+}
+.btn-success{
+    color: #fff;
+    background-color: #0acf97;
+    border-color: #0acf97;
+}
+.btn-info,
+.header-menu{
+    color: #fff;
+    background-color: #727cf5;
+    border-color: #727cf5;
+}
+.btn-success:hover{
+    color: #fff;
+    background-color: #08956d;
+    border-color: #0acf97;
+}
+.btn-info:hover{
+    color: #fff;
+    background-color: #4e5bf2;
+    border-color: #4250f2;
+}
+.form-control{
+    padding: 1.3em;
+}
+.btn{
+    padding: 0.6em;
+}
+.input-group-search{
+    color:silver;
+    background-color: #f1f3fa;
+    border-radius: 10px;
+}
+.input-group-search .input-group-text,
+.input-group-search .form-control{
+    background-color: #f1f3fa;
+    border: 0px;    
+}
+.input-group-search .input-group-text{
+    color:#848484;
+}
+.menu-item-right{
+    float: right;
+    margin-top:3px;
+}
+.menu-item-left{
+    float: left;
+    margin-top:5px;
+}
+.list-group-item.header-menu strong{
+    color: #dddddd;
+}
+.list-group-item.header-menu.link a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.list-group-item.header-menu.link{
+    cursor: pointer;
+}
+.list-group-item.header-menu.link:hover,
+.list-group-item.header-menu.link a:hover{
+    color: #dddddd;
+}
+.row{
+    margin-right: 0px;
+}
